@@ -123,26 +123,6 @@ ul, ol { list-style: none; }
   box-shadow: 3px 3px 0 var(--pink);
 }
 
-.btn--dark {
-  background: #0b0b0c;
-  color: var(--acid);
-  box-shadow: 5px 5px 0 var(--pink);
-}
-.btn--dark:hover {
-  transform: translate(-2px, -2px);
-  box-shadow: 8px 8px 0 var(--pink);
-}
-
-.btn--outline-dark {
-  border-color: #0b0b0c;
-  color: #0b0b0c;
-}
-.btn--outline-dark:hover {
-  background: #0b0b0c;
-  color: var(--acid);
-  transform: translateY(-2px);
-}
-
 /* ============ header ============ */
 
 .site-header {
@@ -1085,11 +1065,33 @@ ul, ol { list-style: none; }
   color: rgba(11, 11, 12, 0.78);
 }
 
-.cta__actions {
+.cta__contacts {
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  gap: 14px;
+  align-items: baseline;
+  gap: 10px 38px;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(22px, 2.6vw, 36px);
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+}
+
+.cta__contact {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 10px;
+  white-space: nowrap;
+}
+
+.cta__contact-label {
+  color: var(--pink);
+  font-family: var(--font-body);
+  font-size: 0.55em;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 .cta__note {
@@ -1100,12 +1102,6 @@ ul, ol { list-style: none; }
   letter-spacing: 0.16em;
   text-transform: uppercase;
   color: rgba(11, 11, 12, 0.5);
-}
-
-.cta__note-contacts {
-  color: rgba(11, 11, 12, 0.68);
-  letter-spacing: 0.06em;
-  text-transform: none;
 }
 
 .cta__sticker {
@@ -1351,11 +1347,8 @@ ul, ol { list-style: none; }
 
   .cta__card { box-shadow: 6px 6px 0 var(--pink); }
   .cta__bg { display: none; }
-  .cta__actions .btn { flex: 1 1 auto; }
   .cta__note { font-size: 8px; letter-spacing: 0.12em; line-height: 1.8; }
   .cta__note-brand { display: block; }
-  .cta__note-tags { display: block; }
-  .cta__note-contacts { display: block; margin-top: 2px; }
   .cta__note-sep { display: none; }
 
   .footer__inner {
@@ -1407,7 +1400,6 @@ ul, ol { list-style: none; }
   .filters { gap: 6px; }
   .filter { padding: 8px 12px; font-size: 9px; }
 
-  .cta__actions .btn { flex: 1 1 100%; }
   .cta__card { border-radius: 24px; }
 }
 

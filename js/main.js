@@ -1,11 +1,4 @@
 (() => {
-  const config = window.PROXVN_CONFIG || {};
-
-  document.querySelectorAll("[data-contact]").forEach((link) => {
-    const href = config[link.dataset.contact];
-    if (href) link.href = href;
-  });
-
   const header = document.querySelector(".site-header");
   const onScroll = () => header?.classList.toggle("is-scrolled", window.scrollY > 18);
   onScroll();
