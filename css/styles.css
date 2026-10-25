@@ -1102,6 +1102,12 @@ ul, ol { list-style: none; }
   color: rgba(11, 11, 12, 0.5);
 }
 
+.cta__note-contacts {
+  color: rgba(11, 11, 12, 0.68);
+  letter-spacing: 0.06em;
+  text-transform: none;
+}
+
 .cta__sticker {
   position: absolute;
   right: 5%;
@@ -1348,6 +1354,8 @@ ul, ol { list-style: none; }
   .cta__actions .btn { flex: 1 1 auto; }
   .cta__note { font-size: 8px; letter-spacing: 0.12em; line-height: 1.8; }
   .cta__note-brand { display: block; }
+  .cta__note-tags { display: block; }
+  .cta__note-contacts { display: block; margin-top: 2px; }
   .cta__note-sep { display: none; }
 
   .footer__inner {
